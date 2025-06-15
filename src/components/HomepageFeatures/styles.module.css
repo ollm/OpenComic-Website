@@ -1,0 +1,26 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.featurePng {
+  border-radius: 16px;
+  margin-bottom: 26px;
+}
+
+.features > div > div > div:nth-child(2) {
+  margin-top: -20px;
+}
+
+@media (max-width: 996px) {
+  .features > div > div > div:nth-child(2) {
+    margin-top: 0px;
+  }
+}
