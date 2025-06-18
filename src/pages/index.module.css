@@ -12,14 +12,21 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 0px;
   }
+}
+
+.container
+{
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .buttonsSeparator

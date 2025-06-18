@@ -11,7 +11,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('', styles.heroBanner)}>
-      <div className="container">
+      <div className={clsx('container', styles.container)}>
         <div className={clsx('', styles.heroLogo)}>
           <img src="/img/logo-margin.png" alt={siteConfig.title} />
         </div>
