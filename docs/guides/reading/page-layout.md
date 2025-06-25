@@ -44,7 +44,7 @@ This mode applies optimized settings for Webtoon reading. It also adjusts the `V
 
 - **Double page:** Off
 - **Adjust to width:** On
-- **Do not enlarge more than its original size:** On
+- **Do not enlarge more than its original size:** On (Can be modified)
 - **Show only one page at a time:** Off
 - **Vertical margin:** 0px
 
@@ -80,13 +80,19 @@ In `Vertical Reading` this force all images to ajust to the width of the screen.
 
 This prevents images from being enlarged beyond their original size, ensuring they are displayed at their native resolution.
 
-### Rotate horizontal
-
-This rotates horizontal images to be displayed vertically.
-
 ### Show only one page at a time
 
 In `Vertical Reading`, if the image height are lower than the screen height, this option will show only one page at a time, centering it vertically.
+
+### Rotate
+
+This rotates images (This rotation is not applied to horizontal images).
+
+### Rotate horizontal
+
+This rotates horizontal images.
+
+----
 
 ### Horizontal margin
 
