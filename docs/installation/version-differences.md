@@ -20,7 +20,7 @@ It stores configuration files in the default user directory: `%appdata%/OpenComi
 
 ### folder.portable.exe
 
-This version stores its configuration **within the folder it's located in**, making it truly portable.
+This version stores its configuration **within the folder it's located in**, making it truly portable. It also saves the paths in a relative way, so if you move OpenComic along with other folders/files, they will still be displayed correctly in OpenComic.
 
 Settings are saved to: `opencomic/storage`
 
@@ -31,7 +31,7 @@ This version is the same as `folder.portable.exe` in terms of behavior and confi
 However, it comes **pre-extracted**. Unlike `portable.exe`, it does not extract files at launch—everything is already in place.
 
 :::note
-For true portability (e.g., using OpenComic from a USB drive), it's recommended to use `folder.portable.exe` or `folder.portable.7z`.
+For true portability (e.g., using OpenComic from a USB drive or external HDD), it's recommended to use `folder.portable.exe` or `folder.portable.7z`.
 :::
 
 ----
@@ -54,3 +54,11 @@ The app can only access folders that have been manually opened through the file 
 ### snap 
 
 Due also the sandbox, `snap` may have some limitations when accessing external hard drives; you may need to grant permissions manually.
+
+### folder.portable.7z and folder.portable.arm64.7z
+
+This version is the same as Windows `folder.portable.exe` and `folder.portable.7z`, stores its configuration **within the folder it's located in**. It also saves the paths in a relative way, so if you move OpenComic along with other folders/files, they will still be displayed correctly in OpenComic.
+
+:::note
+This version is ideal for use OpenComic from a USB drive or external HDD.
+:::
