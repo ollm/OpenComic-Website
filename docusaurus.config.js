@@ -50,12 +50,12 @@ const config = {
 						'https://github.com/ollm/OpenComic-Website/tree/main/',
 				},
 				blog: {
-					id: 'realeses',
-					routeBasePath: 'realeses',
-    			    path: './realeses',
+					id: 'releases',
+					routeBasePath: 'releases',
+    			    path: './releases',
 
-					blogTitle: 'Realeses',
-					blogDescription: 'All OpenComic realeses',
+					blogTitle: 'Releases',
+					blogDescription: 'All OpenComic releases',
 
 					showReadingTime: true,
 					feedOptions: {
@@ -99,8 +99,8 @@ const config = {
 						activeBaseRegex: '^/docs/(?!installation/download|donate|contributing)',
 					},
 					{
-						to: '/realeses',
-						label: 'Realeses',
+						to: '/releases',
+						label: 'releases',
 						position: 'left'
 					},
 					{
@@ -137,8 +137,8 @@ const config = {
 								to: '/docs/category/installation',
 							},
 							{
-								label: 'Realeses',
-								to: '/realeses',
+								label: 'Releases',
+								to: '/releases',
 							},
 							{
 								label: 'Download',
