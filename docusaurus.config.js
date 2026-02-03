@@ -100,7 +100,7 @@ const config = {
 					},
 					{
 						to: '/releases',
-						label: 'releases',
+						label: 'Releases',
 						position: 'left'
 					},
 					{
