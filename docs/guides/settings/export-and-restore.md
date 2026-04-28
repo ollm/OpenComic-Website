@@ -59,7 +59,7 @@ Below are common locations where OpenComic stores its data:
 
 ### Windows
 ```
-%APPDATA%\OpenComic\storage\
+%appdata%/OpenComic/storage/
 ```
 
 ### macOS
