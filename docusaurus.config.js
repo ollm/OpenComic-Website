@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import apiLabels from './src/transformers/api-labels.js';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -50,8 +51,8 @@ const config = {
 					sidebarCollapsed: false,
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/ollm/OpenComic-Website/tree/main/',
+					editUrl: 'https://github.com/ollm/OpenComic-Website/tree/main/',
+					remarkPlugins: [apiLabels],
 				},
 				blog: {
 					id: 'releases',
