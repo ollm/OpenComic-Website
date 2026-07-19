@@ -17,7 +17,7 @@ OpenComic can read and display file metadata.
 | `Series` | Series |
 | `LocalizedSeries` | Localized series |
 | `SeriesGroup` | Series group |
-| `FrontCover` or `InnerCover` | Poster |
+| `Pages/Page` (`@_Type` = `FrontCover` or `InnerCover`, `@_Image` index) | Poster |
 | `Number` | Book number |
 | `Count` | Book total |
 | `Volume` | Volume |
@@ -48,12 +48,44 @@ OpenComic can read and display file metadata.
 | `Teams` | Teams |
 | `Locations` | Locations |
 | `MainCharacterOrTeam` | Main character or team |
-| `Year`, `Month` and `Day` | Release year |
+| `Year`, `Month` and `Day` | Release date (also used for year, month and day fields) |
 | `LanguageISO` | Language |
 | `Format` | Format |
 | `ScanInformation` | Scan information |
 | `Notes` | Notes |
 | `GTIN` | GTIN |
+
+---
+
+### 📄 `MetronInfo.xml` _Nightly_
+
+| Field | In OpenComic |
+|-------|-------------|
+| `Stories/Story` (joined with ` - `) | Title |
+| `Series/Name` | Series |
+| `Number` | Book number |
+| `Series/VolumeCount` | Book total |
+| `Series/Volume` or `MangaVolume` | Volume |
+| `PageCount` | Pages |
+| `Arcs/Arc/Name` | Story arc |
+| `Arcs/Arc/Number` | Story arc number |
+| `Credits/Credit` with role `Writer` | Author |
+| `Publisher/Name`, `Publisher/Imprint`, and `Credits/Credit` roles | Contributor |
+| `AgeRating` | Age rating |
+| `Genres/Genre` | Genre |
+| `Tags/Tag` | Tags |
+| `URLs/URL` | Website or external link |
+| `Summary` | Description |
+| `Characters/Character` | Characters |
+| `Teams/Team` | Teams |
+| `Locations/Location` | Locations |
+| `StoreDate` | Release date |
+| `StoreDate` (`YYYY-MM-DD` parsed) | Year, month and day |
+| `Series/@lang` | Language |
+| `Series/Format` | Format |
+| `Notes` | Notes |
+| `GTIN/ISBN` and/or `GTIN/UPC` (joined with `, `) | GTIN |
+
 
 ---
 
@@ -67,7 +99,7 @@ OpenComic can read and display file metadata.
 | `dc:creator` | Author |
 | `dc:publisher` | Publisher |
 | `dc:subject` | Subject |
-| `dc:description` | Description |
+| `dc:description` (fallback: `dc:subject`) | Description |
 | `dc:language` | Language |
 | `xmp:identifier:uri` | Web |
 | `xmp:identifier` | Identifier |
@@ -90,7 +122,8 @@ OpenComic can read and display file metadata.
 | `dc:contributor` | Contributor |
 | `dc:subject` | Subject |
 | `dc:genre` | Genre |
-| `dc:description` or `se:long-description` | Description |
+| `dc:description` | Description |
+| `se:long-description` | Long description |
 | `dc:rights` | Rights |
 | `dc:language` | Language |
 | `web` | Web |

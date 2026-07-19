@@ -42,6 +42,8 @@ Inverts the page layout to read manga from right to left. this not applies to th
 
 This mode applies optimized settings for Webtoon reading. It also adjusts the `Vertical Reader` scrolling steps (used with the `Next`/`Prev` keys), focusing on `70%` of the screen height per step.
 
+OpenComic can also automatically detect some Webtoon-style content and apply this mode for you when that setting is enabled.
+
 - **Double page:** Off
 - **Adjust to width:** On
 - **Do not enlarge more than its original size:** On (Can be modified)
@@ -125,6 +127,8 @@ Clip (In percentage) the vertical sides of the image to remove unnecessary parts
 ### Delay in changing comics
 
 This option sets a delay before changing to the `Next`/`Prev` comic.
+
+This setting is no longer part of the page layout tab and is configured from the general settings area instead.
 
 ### Animation speed
 

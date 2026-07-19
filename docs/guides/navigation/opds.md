@@ -15,7 +15,16 @@ OpenComic supports most OPDS features.
 - Search support.
 - Pagination support.
 - Authentication support (Basic and Digest)
+- Optional automatic downloads directly from the catalog.
 - Show all publication data.
+
+----
+
+## Automatic downloads
+
+Depending on the catalog and your settings, OpenComic can download publications directly from OPDS instead of only opening their metadata view.
+
+This is useful for catalogs that are intended to work as a downloadable library source.
 
 ----
 

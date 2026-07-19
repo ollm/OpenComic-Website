@@ -6,6 +6,24 @@ sidebar_position: 4
 
 This tab contains all the layout options for eBooks.
 
+OpenComic supports both reflowable and fixed-layout EPUB files, including EPUBs that use right-to-left or vertical reading directions.
+
+----
+
+## EPUB features
+
+- Fixed-layout EPUB support.
+- Right-to-left EPUB support.
+- Vertical EPUB support.
+- Option to force left-to-right reading when you want to override the book direction.
+- Text selection support.
+- Clickable link support.
+- Option to extract document images for workflows that need page images instead of the EPUB container.
+
+Rendered EPUB files are cached to improve loading performance when reopening the same book.
+
+If you want to use the [AI Tools](../ai) with an EPUB, extracting document images is required because the AI workflow operates on images.
+
 ----
 
 ## Options
