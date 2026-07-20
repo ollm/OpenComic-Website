@@ -3,10 +3,13 @@ sidebar_position: 7
 ---
 
 # Tabs and Windows
+_Nightly_
 
 OpenComic can keep multiple locations and readings open at the same time by using tabs.
 
 This is useful when you want to switch quickly between different comics, folders, or server locations without losing your place.
+
+![Tabs in OpenComic](/img/docs/navigation/tabs.png)
 
 ----
 
