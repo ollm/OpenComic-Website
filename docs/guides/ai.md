@@ -75,6 +75,16 @@ Artifact removal is designed to reduce compression noise and similar defects wit
 	afterAlt="AI artifact removal output"
 />
 
+<ImageCompare
+	maxWidth="530px"
+    beforeImageRendering="pixelated"
+    afterImageRendering="pixelated"
+	before="/img/docs/ai/ai-artifact-removal-input-2.png"
+	after="/img/docs/ai/ai-artifact-removal-output-2.png"
+	beforeAlt="AI artifact removal input"
+	afterAlt="AI artifact removal output"
+/>
+
 ### Descreening
 
 Descreening removes halftone and reduces moiré patterns that often appear in scanned manga and comics.
@@ -111,6 +121,14 @@ Upscaling increases image resolution so pages can look cleaner on high-resolutio
 	maxWidth="530px"
 	before="/img/docs/ai/ai-upscale-input.png"
 	after="/img/docs/ai/ai-upscale-output.png"
+	beforeAlt="AI upscale input"
+	afterAlt="AI upscale output"
+/>
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-upscale-input-2.png"
+	after="/img/docs/ai/ai-upscale-output-2.png"
 	beforeAlt="AI upscale input"
 	afterAlt="AI upscale output"
 />
