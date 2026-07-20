@@ -15,6 +15,8 @@ This is useful when you want to switch quickly between different comics, folders
 - Open multiple comics or folders at the same time.
 - Switch between active readings without closing the current one.
 - Reorder tabs by dragging them.
+- Open new windows by dragging a tab out of the current window.
+- Move tabs between existing windows.
 
 ----
 
@@ -33,11 +35,3 @@ You can drag a tab out of the current window to open it in a new one, or move ta
 OpenComic can also open files from outside the app in a new window instead of reusing the current one.
 
 This is useful when you open files from the system file manager and want to keep your current session untouched.
-
-----
-
-## Typical use cases
-
-- Keep one tab for browsing your library and another for active reading.
-- Compare two chapters or two different editions side by side in separate windows.
-- Move a reading session into its own window while keeping the main library open.
