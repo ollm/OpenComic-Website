@@ -6,9 +6,9 @@ sidebar_position: 8
 
 OpenComic supports three kinds of audio while reading:
 
-- Global background music for the whole comic.
-- Page-range background music for specific Webtoon sections.
-- AudioManga-style background music and sound effects tied to panels.
+- [Global background music](#global-background-music) for the whole comic.
+- [Page-range background music](#page-range-background-music-webtoon-nightly) for specific Webtoon sections.
+- [AudioManga background music and SFX](#audiomanga-background-music-and-sfx-nightly) tied to panels.
 
 ----
 
@@ -61,6 +61,48 @@ filename_0005.jpg
 ```
 
 In both cases, the page numbers in the audio filename define where that track starts and ends.
+
+### gallery-dl
+
+If you use `gallery-dl`, configure it so Webtoon background music is exported in a format OpenComic can match by page range, for example:
+
+```json
+{
+	"extractor": {
+		"ytdl": {
+			"enabled": true,
+			"format": "bestaudio"
+		},
+		"webtoons": {
+			"archive-format": "{title_no}_{episode}_{type}_{num}_{audioId}",
+			"episode": {
+				"bgm": true,
+				"filename": {
+					"type == 'bgm'": "bgm-{num_play:>04}-{num_stop|'0000':>04}.{extension}",
+					"": "{num:>04}.{extension}"
+				}
+			}
+		}
+	}
+}
+```
+
+If your current template gives duplicate names for multiple tracks in the same episode, add a unique field such as `sortOrder` or `audioId` to the BGM filename. For example:
+
+```json
+"type == 'bgm'": "bgm-{num_play:>04}-{num_stop|'0000':>04}-{sortOrder:>02}.{extension}"
+```
+
+You can also use image-based naming fields added for this workflow:
+
+- `filename_play`
+- `filename_stop`
+
+For example:
+
+```json
+"type == 'bgm'": "bgm-{filename_play}-{filename_stop}.{extension}"
+```
 
 ----
 
