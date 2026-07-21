@@ -90,7 +90,7 @@ If you use `gallery-dl`, configure it so Webtoon background music is exported in
 If your current template gives duplicate names for multiple tracks in the same episode, add a unique field such as `sortOrder` or `audioId` to the BGM filename. For example:
 
 ```json
-"type == 'bgm'": "bgm-{num_play:>04}-{num_stop|'0000':>04}-{sortOrder:>02}.{extension}"
+"type == 'bgm'": "bgm-{num_play:>04}-{num_stop|'0000':>04}_{sortOrder:>02}.{extension}"
 ```
 
 You can also use image-based naming fields added for this workflow:
@@ -102,6 +102,7 @@ For example:
 
 ```json
 "type == 'bgm'": "bgm-{filename_play}-{filename_stop}.{extension}"
+"": "{filename}.{extension}"
 ```
 
 ----
