@@ -1,0 +1,99 @@
+---
+sidebar_position: 3
+---
+
+# Custom Themes
+
+Custom themes let you change OpenComic's appearance with your own CSS. They are useful for changing colors, hiding controls that you do not need, or adding CSS rules for a particular workflow.
+
+## Add a custom theme
+
+You can add a custom theme from the **Theme** section.
+
+The theme is loaded instantly when added. If you edit the CSS file later, disable and enable the theme again to reload it, or restart OpenComic.
+
+:::warning
+Only load custom themes from sources you trust. CSS can import remote resources, which may affect your privacy or load unwanted content.
+:::
+
+## Change colors
+
+OpenComic's Material Design color themes are CSS files that define custom properties. They are a useful reference when creating a color theme:
+
+- [Blue color tokens](https://github.com/ollm/OpenComic/blob/master/themes/material-design/colors/blue/tokens.css)
+- [Blue missing color tokens](https://github.com/ollm/OpenComic/blob/master/themes/material-design/colors/blue/tokens.missing.css)
+
+For example, a color file can override the application variables inside the class used by the color theme:
+
+```css
+.app.blue
+{
+	--md-sys-color-primary-light: #7c3aed;
+	--md-sys-color-primary-dark: #d8b4fe;
+	--md-sys-color-background-light: #fff7ed;
+	--md-sys-color-background-dark: #1c1917;
+}
+```
+
+The `tokens.css` file contains the main Material 3 palette and system color tokens. The `tokens.missing.css` file contains additional background, surface, and variant tokens used by OpenComic. Copy the relevant structure from those files and change the values you need. Keeping the selector aligned with the color class is important: a rule such as `.app.blue` only applies while the blue color is selected.
+
+You can also target the application more generally when the override should apply regardless of the selected color:
+
+```css
+.app.blue,
+.app.green,
+.app.red,
+.app.yellow
+{
+	--md-sys-color-primary: #7c3aed;
+}
+```
+
+or
+
+```css
+body .app
+{
+	--md-sys-color-primary: #7c3aed;
+}
+```
+
+Use the browser's developer tools to inspect the element and variable you want to change. Custom CSS follows the normal CSS cascade, so a more specific selector or a later-loaded stylesheet can override your rule.
+
+## Hide buttons or menus
+
+Custom themes can hide interface elements with normal CSS. For example:
+
+```css
+/* Replace these selectors with the controls you want to hide. */
+.some-button,
+.some-menu
+{
+	display: none !important;
+}
+```
+
+Inspect the element first and use its actual class or attribute selector. Interface selectors can change between OpenComic versions, so custom rules that hide controls may need to be updated after an application update. Hiding a control only changes the interface; it does not add an access-control or parental-control layer.
+
+## Activate multiple themes
+
+You can add more than one custom theme and activate them at the same time. OpenComic loads every theme whose **Active** switch is enabled.
+
+This makes it possible to keep separate files for different purposes, for example:
+
+- One file for color variables;
+- One file for hiding menus or buttons;
+- One file for layout adjustments.
+
+When rules conflict, normal CSS cascade rules apply. Keep related overrides in one file, or make the intended order and selector specificity clear, so that the result is predictable.
+
+## Import other CSS files
+
+The main custom theme file can import other stylesheets with the standard CSS `@import` rule. Paths are resolved relative to the file containing the import:
+
+```css
+@import url("./colors.css");
+@import url("./hide-controls.css");
+
+/* Additional rules can remain in the main file. */
+```

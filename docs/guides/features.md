@@ -8,7 +8,7 @@ OpenComic offers multiple features; here’s a list of the most important ones.
 
 - 🌄 Support this image formats: `JPG`, `JP2`, `JXR`, `JXL`, `PNG`, `APNG`, `AVIF`, `WEBP`, `GIF`, `SVG`, `BMP`, `ICO`
 - 📦 Support this compressed formats: `RAR`, `ZIP`, `7Z`, `TAR`, `TAR.GZ`, `TAR.XZ`, `TAR.BZIP2`, `TAR.ZSTD`, `LZH`, `ACE`, `CBR`, `CBZ`, `CBA`, `CB7`, `CBT`
-- 📄 Support this documents/ebook formats: `PDF`, `EPUB`, including fixed-layout, right-to-left and vertical EPUBs
+- 📄 Support this documents/ebook formats: `PDF`, `EPUB`, `MOBI`, `AZW`, `AZW3`, `FB2`
 - 🎵 Support background music from folder, page-range background music, and AudioManga sound effects: `MP3`, `M4A`, `WEBM`, `WEBA`, `OGG`, `OPUS`, `WAV`, `FLAC`
 - ☁️ Server connection support: `smb://`, `ftp://`, `ftps://`, `scp://`, `sftp://`, `ssh://`, `s3://`, `webdav://`, `webdavs://`
 - 🗂️ Tab support

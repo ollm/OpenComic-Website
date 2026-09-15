@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <Layout
       title={`Comic and manga reader`}
-      description="Description will go into a meta tag in <head />">
+      description="OpenComic is a comic and manga reader for Windows, Linux, and macOS.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
