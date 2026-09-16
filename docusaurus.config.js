@@ -75,7 +75,7 @@ const config = {
 					onInlineTags: 'warn',
 					onInlineAuthors: 'warn',
 					onUntruncatedBlogPosts: 'warn',
-					blogSidebarTitle: 'Realeses',
+					blogSidebarTitle: 'Releases',
 					blogSidebarCount: 'ALL',
 				},
 				theme: {
