@@ -1,9 +1,0 @@
-<IfModule mod_headers.c>
-  <FilesMatch "\.(html|xml)$">
-    Header set Cache-Control "public, max-age=3600, must-revalidate"
-  </FilesMatch>
-
-  <FilesMatch "\.(avif|gif|ico|jpe?g|png|svg|webp)$">
-    Header set Cache-Control "public, max-age=86400, must-revalidate"
-  </FilesMatch>
-</IfModule>
