@@ -113,6 +113,34 @@ Descreening removes halftone and reduces moiré patterns that often appear in sc
 	afterAlt="AI descreen output 3"
 />
 
+#### Keep big halftones
+
+This option allows the AI descreening tool to preserve larger halftone patterns while removing smaller print patterns. It is useful for preserving intentional halftone textures and maintaining the artistic integrity of the original material.
+
+**Off**
+
+Larger halftone patterns are treated like the other print patterns and may be removed.
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-descreen-keep-input.png"
+	after="/img/docs/ai/ai-descreen-keep-output.png"
+	beforeAlt="AI descreen keep input"
+	afterAlt="AI descreen keep output"
+/>
+
+**On**
+
+Larger halftone patterns are preserved while smaller print patterns are removed.
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-descreen-keep-input.png"
+	after="/img/docs/ai/ai-descreen-keep-output-2.png"
+	beforeAlt="AI descreen keep input"
+	afterAlt="AI descreen keep output 2"
+/>
+
 ### Upscaling
 
 Upscaling increases image resolution so pages can look cleaner on high-resolution displays or after enlargement.
