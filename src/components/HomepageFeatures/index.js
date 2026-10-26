@@ -9,7 +9,7 @@ const FeatureList = [
     Png: require('@site/static/img/screenshots/store/macos/colorize.png').default,
     description: (
       <>
-        High-quality downscaling with <code>Lanczos3</code> and full customization for comics and manga.
+        High-quality downscaling with <code>Lanczos3</code> and <a href="/docs/guides/ai"><code>AI</code></a> upscaling and restoration for comics and manga.
       </>
     ),
   },

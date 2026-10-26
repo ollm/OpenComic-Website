@@ -29,11 +29,18 @@ For more information about how these models were trained, visit the [main reposi
 
 ### Quality levels of OpenComic AI models
 
-OpenComic AI models come in three distinct quality levels: `Fast`, `Balanced`, and `Quality`. Each represents a different balance between speed and output quality.
+OpenComic AI models are available in three quality levels: `Fast`, `Balanced`, and `Quality`. Each level represents a different trade-off between processing speed and output quality. The actual quality of each level may vary depending on the model version.
 
-- `Fast`: The quickest option with the lowest output quality.
-- `Balanced`: A balanced trade-off between quality and speed.
-- `Quality`: The highest output quality but also the slowest option.
+- `Fast`: The fastest option, with the lowest output quality.
+- `Balanced`: A balance between processing speed and output quality.
+- `Quality`: The highest output quality, but also the slowest option.
+
+#### V3 Quality Levels
+
+V3 models offer improved quality-to-speed performance compared to V2 models. They are currently available only in the `Fast` and `Balanced` levels.
+
+- `Fast`: Provides quality comparable to V2 `Balanced`, while maintaining a processing speed similar to V2 `Fast`.
+- `Balanced`: Provides quality comparable to V2 `Quality`, while maintaining a processing speed similar to V2 `Balanced`.
 
 ### Model versions
 
@@ -177,8 +184,8 @@ This extraction step extracts images from inside `PDF` or `EPUB` that the AI too
 
 In the public OpenComic AI repositories:
 
-- Source code is published under the `MIT` license.
-- OpenComic AI model weights are published under `CC BY 4.0`.
+- Source code is published under the <a href="https://github.com/ollm/opencomic-ai-training/blob/master/LICENSE">MIT</a> license.
+- OpenComic AI model weights are published under <a href="https://github.com/ollm/opencomic-ai-training/blob/master/LICENSE_MODELS">CC BY 4.0</a>.
 
 For third-party models, their own licenses and terms apply.
 

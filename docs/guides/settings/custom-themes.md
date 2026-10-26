@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Custom Themes
@@ -20,6 +20,22 @@ Only load custom themes from sources you trust. CSS can import remote resources,
 :::info
 If the `css` file causes the application to become unresponsive, you can disable the theme by deleting/renaming the corresponding `css` file.
 :::
+
+## Changing the Size of the Bars
+
+You can adjust the size of the application's bars (such as the top bar) by overriding the corresponding CSS variables.
+
+If the size is changed without overriding the CSS variables, some OpenComic features that rely on knowing the container's dimensions may not work properly.
+
+```css
+:root
+{
+	--const-tabs-bar-height: 41px;
+	--const-tabs-bar-height-without-border: 40px;
+	--const-header-bar-height: 48px;
+	--const-side-bar-width: 192px;
+}
+```
 
 ## Change colors
 
@@ -100,8 +116,8 @@ You can add more than one custom theme and activate them at the same time. OpenC
 
 This makes it possible to keep separate files for different purposes, for example:
 
-- One file for color variables;
-- One file for hiding menus or buttons;
+- One file for color variables.
+- One file for hiding menus or buttons.
 - One file for layout adjustments.
 
 When rules conflict, normal CSS cascade rules apply. Keep related overrides in one file, or make the intended order and selector specificity clear, so that the result is predictable.
