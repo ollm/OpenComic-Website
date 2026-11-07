@@ -10,6 +10,7 @@ sidebar_position: 0.1
 
 ![Screenshot](/img/screenshots/colorize.png "Colorize")
 ![Screenshot](/img/screenshots/colorize-menu.png "Colorize menu")
+![Screenshot](/img/screenshots/colorize-menu-2.png "Colorize menu 2")
 
 ## eBook (Epub)
 
@@ -25,3 +26,8 @@ sidebar_position: 0.1
 ### Shortcuts (Keyboard and Gamepad)
 
 ![Screenshot](/img/screenshots/shortcuts.png "Shortcuts (Keyboard and Gamepad)")
+![Screenshot](/img/screenshots/shortcuts-2.png "Shortcuts 2 (Keyboard and Gamepad)")
+
+### AI tools
+
+![Screenshot](/img/screenshots/ai-tools.png "AI tools")

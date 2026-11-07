@@ -120,6 +120,36 @@ Descreening removes halftone and reduces moiré patterns that often appear in sc
 	afterAlt="AI descreen output 3"
 />
 
+#### Remove moiré patterns
+
+The models have been trained to remove moiré patterns. V4 models have a specialized architecture for this purpose, making them particularly effective at reducing these patterns.
+
+Smaller moiré patterns are removed more effectively, while larger patterns may persist in some cases.
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-descreen-moire-input.png"
+	after="/img/docs/ai/ai-descreen-moire-output.png"
+	beforeAlt="AI descreen moire input"
+	afterAlt="AI descreen moire output"
+/>
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-descreen-moire-input-2.png"
+	after="/img/docs/ai/ai-descreen-moire-output-2.png"
+	beforeAlt="AI descreen moire input 2"
+	afterAlt="AI descreen moire output 2"
+/>
+
+<ImageCompare
+	maxWidth="530px"
+	before="/img/docs/ai/ai-descreen-moire-input-3.png"
+	after="/img/docs/ai/ai-descreen-moire-output-3.png"
+	beforeAlt="AI descreen moire input 3"
+	afterAlt="AI descreen moire output 3"
+/>
+
 #### Keep big halftones
 
 This option allows the AI descreening tool to preserve larger halftone patterns while removing smaller print patterns. It is useful for preserving intentional halftone textures and maintaining the artistic integrity of the original material.

@@ -55,7 +55,7 @@ There are also other configurable options.
 
 ## AudioManga integration
 
-Guided View works particularly well with [Music](music) setups that use AudioManga `sfx` metadata.
+Guided View works particularly well with [Music](../music) setups that use AudioManga `sfx` metadata.
 
 In that case, sound effects can be triggered automatically while moving through the guided sequence, instead of requiring a manual press on the panel.
 

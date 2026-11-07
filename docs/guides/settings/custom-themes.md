@@ -21,6 +21,15 @@ Only load custom themes from sources you trust. CSS can import remote resources,
 If the `css` file causes the application to become unresponsive, you can disable the theme by deleting/renaming the corresponding `css` file.
 :::
 
+## Community themes
+
+Community themes are collected in the [OpenComic-Themes repository](https://github.com/ollm/OpenComic-Themes). It contains the theme package format, a sample theme, and instructions for contributing.
+
+You can browse and install themes published in this repository directly from OpenComic's **Theme** section. Select a theme from the community catalog to install it and apply it immediately.
+
+See the repository's [README](https://github.com/ollm/OpenComic-Themes/blob/main/README.md) for the required manifest, preview image, and directory structure.
+
+
 ## Changing the Size of the Bars
 
 You can adjust the size of the application's bars (such as the top bar) by overriding the corresponding CSS variables.
@@ -43,6 +52,9 @@ OpenComic's Material Design color themes are CSS files that define custom proper
 
 - [Blue color tokens](https://github.com/ollm/OpenComic/blob/master/themes/material-design/colors/blue/tokens.css)
 - [Blue missing color tokens](https://github.com/ollm/OpenComic/blob/master/themes/material-design/colors/blue/tokens.missing.css)
+- [Background color tokens](https://github.com/ollm/OpenComic/blob/master/themes/material-design/colors/colors.bg.css)
+
+The background tokens are used only by CSS background rules, so their values can be colors, images, gradients, or other valid CSS background values.
 
 For example, a color file can override the application variables inside the class used by the color theme:
 

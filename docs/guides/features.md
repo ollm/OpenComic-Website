@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Features
 
-OpenComic offers multiple features; here’s a list of the most important ones.
+OpenComic offers multiple features, here’s a list of the most important ones.
 
 - 🌄 Support this image formats: `JPG`, `JP2`, `JXR`, `JXL`, `PNG`, `APNG`, `AVIF`, `WEBP`, `GIF`, `SVG`, `BMP`, `ICO`
 - 📦 Support this compressed formats: `RAR`, `ZIP`, `7Z`, `TAR`, `TAR.GZ`, `TAR.XZ`, `TAR.BZIP2`, `TAR.ZSTD`, `LZH`, `ACE`, `CBR`, `CBZ`, `CBA`, `CB7`, `CBT`
