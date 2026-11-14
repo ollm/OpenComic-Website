@@ -3,7 +3,6 @@ sidebar_position: 4
 ---
 
 # Custom Themes
-_Nightly_
 
 Custom themes let you change OpenComic's appearance with your own CSS. They are useful for changing colors, hiding controls that you do not need, or adding CSS rules for a particular workflow.
 

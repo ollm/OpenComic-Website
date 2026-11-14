@@ -20,7 +20,7 @@ That track is then used as background music for the entire comic.
 
 ----
 
-## Page-range background music (Webtoon) _Nightly_
+## Page-range background music (Webtoon)
 
 This mode lets you play different background tracks for specific page ranges. The audio files must be stored inside the same comic folder or archive.
 
@@ -107,7 +107,7 @@ For example:
 
 ----
 
-## AudioManga background music and SFX _Nightly_
+## AudioManga background music and SFX
 
 This mode is based on the AudioManga format. Like the Webtoon mode, it supports background music, but it also adds sound effects that can be attached to specific panels.
 

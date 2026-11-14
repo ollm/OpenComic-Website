@@ -3,7 +3,6 @@ sidebar_position: 7
 ---
 
 # Tabs and Windows
-_Nightly_
 
 OpenComic can keep multiple locations and readings open at the same time by using tabs.
 

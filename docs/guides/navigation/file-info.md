@@ -57,7 +57,7 @@ OpenComic can read and display file metadata.
 
 ---
 
-### 📄 `MetronInfo.xml` _Nightly_
+### 📄 `MetronInfo.xml`
 
 | Field | In OpenComic |
 |-------|-------------|

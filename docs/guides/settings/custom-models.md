@@ -3,7 +3,6 @@ sidebar_position: 2
 ---
 
 # Custom Models
-_Nightly_
 
 In addition to the models included by default, OpenComic allows you to integrate custom models.
 

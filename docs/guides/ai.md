@@ -5,7 +5,6 @@ sidebar_position: 0.2
 import ImageCompare from '@site/src/components/ImageCompare';
 
 # AI Tools
-_Nightly_
 
 OpenComic includes AI-based image tools focused on comic and manga restoration workflows.
 
