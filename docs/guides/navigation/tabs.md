@@ -37,3 +37,15 @@ You can drag a tab out of the current window to open it in a new one, or move ta
 OpenComic can also open files from outside the app in a new window instead of reusing the current one.
 
 This is useful when you open files from the system file manager and want to keep your current session untouched.
+
+----
+
+## Restore windows from a previous session
+
+OpenComic can restore your tabs when it starts and keep a list of recently closed windows.
+
+1. In **Settings > General > Startup behavior**, enable **Restore tabs from last session**.
+2. In **Settings > General > Recents**, choose how many recent windows to keep.
+3. To reopen a saved window later, use **File > Recent windows**.
+
+Set the number of recent windows to `0` to stop keeping a list of closed windows. The startup restore option also controls whether OpenComic saves and restores the tabs from your previous session.

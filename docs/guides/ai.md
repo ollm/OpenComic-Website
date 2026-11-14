@@ -199,6 +199,28 @@ Upscaling increases image resolution so pages can look cleaner on high-resolutio
 
 ----
 
+## Preprocess folders with AI
+
+You can run the AI settings configured for a comic on its images before opening it:
+
+1. Configure the AI actions for the comic or folder.
+2. In the library or file browser, select one or more folders.
+3. Open the context menu and choose **Preprocess images with AI**.
+
+OpenComic processes the files in the selected folders using the AI settings associated with each comic. A progress indicator shows the work and lets you cancel it. If none of the selected folders has AI configured, OpenComic will show a notice instead.
+
+## Save AI-processed images
+
+While reading, open the image context menu and choose **Save all AI-processed images**. OpenComic saves the pages from the current comic.
+
+The destination follows your image-saving settings: OpenComic either uses the configured save folder or asks you to choose where to save the images.
+
+:::tip
+For `PDF` and `EPUB` files, enable [Extract document images](#extract-document-images) before using AI tools.
+:::
+
+----
+
 ## Extract document images
 
 When you use AI Tools with `PDF` or `EPUB` files, OpenComic needs to work with page images instead of the original document container.
